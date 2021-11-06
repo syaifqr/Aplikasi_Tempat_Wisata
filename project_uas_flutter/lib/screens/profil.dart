@@ -13,10 +13,10 @@ class _ProfilState extends State<Profil> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.white,
+        extendBodyBehindAppBar: true,
         appBar: AppBar(
           elevation: 0,
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.transparent,
           leading: Builder(
             builder: (BuildContext context) {
               return IconButton(
@@ -132,26 +132,52 @@ class _ProfilState extends State<Profil> {
                       ),
                     ),
                   ),
-              Expanded(
-                    child: Center(
-                      child: ButtonWidget1(
-                        onClick: () {
-                          Navigator.of(context).pushNamed('/home');
-                        },
-                        btnText: "Edit Profil",
+              SizedBox(height: 10),
+              InkWell(
+                onTap: () {Navigator.of(context).pushNamed('/home');},
+                child: Center(
+                  child: Container(
+                        width: 200,
+                        height: 50,
+                        margin: EdgeInsets.only(top: 10, bottom: 20),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(20)),
+                          color: Colors.blue,
+                        ),
+                        child: Center(
+                          child: Text(
+                            'Edit Profil',
+                            style: TextStyle(color: Colors.white)
+                          ),
+                        )
                       ),
                     ),
                   ),
-              Expanded(
-                    child: Center(
-                      child: ButtonWidget1(
-                        onClick: () {
-                          Navigator.of(context).pushNamed('/login');
-                        },
-                        btnText: "Logout",
+              
+              SizedBox(height: 10),
+              InkWell(
+                onTap: () {Navigator.of(context).pushNamed('/login');},
+                child: 
+                  Center(
+                    child: Container(
+                        width: 200,
+                        height: 50,
+                        margin: EdgeInsets.only(top: 10, bottom: 20),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(20)),
+                          color: Colors.red,
+                        ),
+                        child: Center(
+                          child: Text(
+                            'Logout',
+                            style: TextStyle(color: Colors.white)
+                          ),
+                        )
                       ),
-                    ),
-                  )
+                  ),
+                  ),
+              
+              SizedBox(height: 10),
             ],
           )
         ),
