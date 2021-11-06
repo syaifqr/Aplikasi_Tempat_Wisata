@@ -31,6 +31,39 @@ class _HomeState extends State<Home> {
             ],
           ),
         ),
+        drawer: Drawer(
+          child: Container(
+            color: Colors.green,
+            child: ListView(
+              children: [
+                DrawerHeader(
+                  child: Center(
+                    child: Text('Menu Drawer')
+                  )
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: ListTile(
+                    title: Text('Home', style: TextStyle(color: Colors.white),
+                    )
+                  ),
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: ListTile(
+                    title: Text('Categories', style: TextStyle(color: Colors.black),)
+                  ),
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: ListTile(
+                    title: Text('Logout', style: TextStyle(color: Colors.black),)
+                  ),
+                )
+              ],
+            ),
+          )
+        ),
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.white,
@@ -38,7 +71,7 @@ class _HomeState extends State<Home> {
             builder: (BuildContext context) {
               return IconButton(
                 icon: const Icon(Icons.menu, color: Colors.black),
-                onPressed: () {},
+                onPressed: () => Scaffold.of(context).openDrawer(),
               );
             },
           ),
