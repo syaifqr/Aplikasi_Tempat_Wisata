@@ -14,7 +14,7 @@ class _DetailNewsState extends State<DetailNews> {
       child: Scaffold(
         appBar: AppBar(
           elevation: 0,
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.RGBO(255, 255, 255, 0),
           leading: Builder(
             builder: (BuildContext context) {
               return IconButton(
