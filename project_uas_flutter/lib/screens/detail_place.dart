@@ -23,16 +23,6 @@ class _DetailPlaceState extends State<DetailPlace> {
               );
             },
           ),
-          actions: <Widget>[
-            IconButton(
-              icon: Icon(Icons.search, color: Colors.black),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: Icon(Icons.person, color: Colors.black),
-              onPressed: () {Navigator.of(context).pushNamed('/profil');},
-            )
-          ],
         ),
         body: SingleChildScrollView(
           child: Column(
