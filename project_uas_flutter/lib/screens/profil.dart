@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_uas_flutter/screens/part/button.dart';
 
 class Profil extends StatefulWidget {
   const Profil({ Key? key }) : super(key: key);
@@ -131,6 +132,26 @@ class _ProfilState extends State<Profil> {
                       ),
                     ),
                   ),
+              Expanded(
+                    child: Center(
+                      child: ButtonWidget1(
+                        onClick: () {
+                          Navigator.of(context).pushNamed('/home');
+                        },
+                        btnText: "Edit Profil",
+                      ),
+                    ),
+                  ),
+              Expanded(
+                    child: Center(
+                      child: ButtonWidget1(
+                        onClick: () {
+                          Navigator.of(context).pushNamed('/login');
+                        },
+                        btnText: "Logout",
+                      ),
+                    ),
+                  )
             ],
           )
         ),
