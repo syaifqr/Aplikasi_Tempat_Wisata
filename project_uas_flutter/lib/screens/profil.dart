@@ -24,16 +24,6 @@ class _ProfilState extends State<Profil> {
               );
             },
           ),
-          actions: <Widget>[
-            IconButton(
-              icon: Icon(Icons.search, color: Colors.black),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: Icon(Icons.person, color: Colors.black),
-              onPressed: () {},
-            )
-          ],
         ),
         body: SingleChildScrollView(
           child: Column(
