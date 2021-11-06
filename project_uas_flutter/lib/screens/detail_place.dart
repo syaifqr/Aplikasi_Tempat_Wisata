@@ -12,9 +12,10 @@ class _DetailPlaceState extends State<DetailPlace> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        extendBodyBehindAppBar: true,
         appBar: AppBar(
           elevation: 0,
-          backgroundColor: Color.fromRGBO(255, 255, 255, 0),
+          backgroundColor: Colors.transparent,
           leading: Builder(
             builder: (BuildContext context) {
               return IconButton(
