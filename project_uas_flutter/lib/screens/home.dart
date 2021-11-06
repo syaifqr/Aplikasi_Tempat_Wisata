@@ -27,10 +27,7 @@ class _HomeState extends State<Home> {
                 onPressed: () {}, 
                 icon: Icon(Icons.home, color: Colors.white)
               ),
-              IconButton(
-                onPressed: () {Navigator.of(context).pushNamed('/profil');}, 
-                icon: Icon(Icons.person, color: Colors.white)
-              ),
+              
             ],
           ),
         ),
