@@ -14,11 +14,11 @@ class _DetailNewsState extends State<DetailNews> {
       child: Scaffold(
         appBar: AppBar(
           elevation: 0,
-          backgroundColor: Colors.RGBO(255, 255, 255, 0),
+          backgroundColor: Color.fromRGBO(255, 255, 255, 0),
           leading: Builder(
             builder: (BuildContext context) {
               return IconButton(
-                icon: const Icon(Icons.menu, color: Colors.black),
+                icon: const Icon(Icons.arrow_back, color: Colors.black),
                 onPressed: () {},
               );
             },
