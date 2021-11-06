@@ -12,22 +12,6 @@ class _DetailNewsState extends State<DetailNews> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        bottomNavigationBar: BottomAppBar(
-          color: Colors.green,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              IconButton(
-                onPressed: () {}, 
-                icon: Icon(Icons.home, color: Colors.white)
-              ),
-              IconButton(
-                onPressed: () {Navigator.of(context).pushNamed('/profil');}, 
-                icon: Icon(Icons.person, color: Colors.white)
-              ),
-            ],
-          ),
-        ),
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.white,
