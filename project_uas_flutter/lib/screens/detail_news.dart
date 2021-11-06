@@ -19,10 +19,6 @@ class _DetailNewsState extends State<DetailNews> {
             children: [
               IconButton(
                 onPressed: () {}, 
-                icon: Icon(Icons.add, color: Colors.white)
-              ),
-              IconButton(
-                onPressed: () {}, 
                 icon: Icon(Icons.home, color: Colors.white)
               ),
               IconButton(
