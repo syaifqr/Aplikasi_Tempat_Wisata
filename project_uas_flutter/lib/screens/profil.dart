@@ -13,26 +13,6 @@ class _ProfilState extends State<Profil> {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
-        bottomNavigationBar: BottomAppBar(
-          color: Colors.green,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              IconButton(
-                onPressed: () {}, 
-                icon: Icon(Icons.add, color: Colors.white)
-              ),
-              IconButton(
-                onPressed: () {}, 
-                icon: Icon(Icons.home, color: Colors.white)
-              ),
-              IconButton(
-                onPressed: () {}, 
-                icon: Icon(Icons.person, color: Colors.white)
-              ),
-            ],
-          ),
-        ),
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.white,
