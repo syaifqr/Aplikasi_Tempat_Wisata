@@ -21,7 +21,7 @@ class _HomeState extends State<Home> {
             children: [
               IconButton(
                 onPressed: () {}, 
-                icon: Icon(Icons.add, color: Colors.white)
+                icon: Icon(Icons.add_circle_outline, color: Colors.white)
               ),
               IconButton(
                 onPressed: () {}, 
